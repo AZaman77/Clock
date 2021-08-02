@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="Clock.css">
+  <meta charset="utf-8">
+  <title>Clock</title>
+  <link rel="shortcut icon" href="https://images-na.ssl-images-amazon.com/images/I/71Mf5B1V3CL.png">
+  <div class="time">
+    <script type="text/javascript">
+      function display_c() {
+        var refresh = 1000; // Refresh rate in milli seconds
+        mytime = setTimeout('display_ct()', refresh)
+      }
+
+      function display_ct() {
+        var x = new Date()
+        document.getElementById('ct').innerHTML = x;
+        display_c();
+      }
+    </script>
+  </div>
+</head>
+
+<body onload=display_ct();>
+  <span id='ct'></span>
+<div class="">
+  <button onclick="myFunction()">Dark mode/Light mode</button>
+</div>
+
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+
+</html>

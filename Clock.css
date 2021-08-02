@@ -1,0 +1,19 @@
+body {
+  font:Courier;
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+
+/*Clock*/
+#ct {
+  font-family: Courier;
+  font-weight: bold;
+  font-size:40;
+  position: static;
+}
+
+.dark-mode {
+  color: black;
+  background-color: white;
+}
